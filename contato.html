@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> Luiz Otávio Castro Fontes </h1>
+        <h2>Desenvolvedor Web em formação</h2>
+        <nav>
+            <a href="index.html">Sobre mim</a> |
+            <a href="curriculo.html">Curriculo</a> |
+            <a href="contato.html">Contato</a> 
+        </nav>
+    </header>
+    <main><br>
+        <section>Fale comigo</section>
+
+    <form action="/contato" method="post">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" minlength="3" required><br><br>
+        
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone"><br><br>
+       
+        <label for="data_nascimento">Data de nascimento:</label><br>
+        <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Endereço:</legend>
+
+        <label for="cep">Cep:</label><br>
+        <input type="number" id="cep" name="cep" pattern="[0-9]{8}" required><br>
+        <small>Formato: 65374653</small><br><br>
+        
+        <label for="rua">Rua:</label><br>
+        <input type="text" id="rua" name="rua"><br><br>
+        
+        <label for="numero">Numero:</label><br>
+        <input type="number" id="numero" name="numero" min="1" max="99999"><br><br>
+        
+        <label for="cidade">Cidade:</label><br>
+        <input type="text" id="cidade" name="cidade"><br><br>
+        
+
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+            <option value="PR">PR</option>
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="MT">MT</option>
+            <option value="MG">MG</option>
+          </select>
+
+    </fieldset>
+    <fieldset>
+        <legend>Interesse:</legend>
+        <label for="area">Escolha a sua área de interesse:</label>
+        <select name="area" id="area" required>
+            <option value="back-end">Back-end</option>
+            <option value="front-end">Front-end</option>
+            <option value="banco-de-dados">Banco de dados</option>
+            <option value="full-stack">Full Stack</option>
+        </select><br>
+
+        <p>Nivel:</p>
+  <input type="radio" id="iniciante" name="nivel">
+  <label for="iniciante">Iniciante</label><br>
+  <input type="radio" id="intermediario" name="nivel">
+  <label for="css">Intermediario</label><br>
+  <input type="radio" id="avancado" name="nivel">
+  <label for="avancado">Avançado</label><br><br>
+
+  <P> Mensagem: </P>
+  <textarea name="mensagem" maxlength="500"></textarea><br>
+
+  <input type="checkbox" id="termos" name="termos" required>
+  <label for="termos"> Aceite os termos</label><br><br>
+
+  <input type="submit" value="Submit"> 
+
+    </fieldset>
+    </form>   
+    </main>
+    <footer><p>© 2026 Luiz Otávio <a href="mailto:luiz.fontes0@outlook.com">Email</a></p></footer>
+</body>
+</html>
