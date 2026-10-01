@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Movimente-se</title>
+</head>
+<body>
+
+    <form action="/contato" method="post">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" minlength="3" required><br><br>
+        
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="cpf">Cpf:</label><br>
+        <input type="number" id="cpf" name="cpf", pattern="(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})" 
+        maxlength="14" ><br><br>
+       
+        <label for="data_nascimento">Data de nascimento:</label><br>
+        <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+
+        <label for="peso">Peso em kilos:</label><br>
+        <input type="number" id="peso" name="peso" min="0" step="0.1"><br><br>
+        
+    </fieldset>
+    <fieldset>
+        <p>Pagamento:</p>
+  <input type="radio" id="mensal" name="nivel">
+  <label for="mensal">Mensal</label><br>
+  <input type="radio" id="trimestal" name="nivel">
+  <label for="trimestal">Trimestal</label><br>
+  <input type="radio" id="anual" name="nivel">
+  <label for="anual">Anual</label><br><br>
+
+  <input type="checkbox" id="musculacao" name="musculacao" value="Musculacao">
+  <label for="musculacao"> Musculação</label><br>
+  <input type="checkbox" id="pilates" name="pilates" value="Pilates">
+  <label for="pilates"> Pilates</label><br>
+  <input type="checkbox" id="spinning" name="spinning" value="Spinning">
+  <label for="spinning"> Spinning</label><br>
+  <input type="checkbox" id="natacao" name="natacao" value="Natacao">
+  <label for="natacao"> Natação</label><br><br>
+
+  <label for="appt">Selecione um tempo:</label>
+  <input type="time" id="appt" name="appt"><br><br>
+
+  <input type="submit" value="Submit"> 
+
+    </fieldset>
+    </form>  
+    
+</body>
+</html>
+
+<!--
+pois só as validações do html não é o sufficiente para garantir que os dados estão corretos, pois além dele verificar apenas o lado do cliente,
+ela é mais facil de burlar e invadir, o que faz com que essas medidas de segurança não sejam o suficiente para garantir que por exemplo o "required", sejem seguidos de forma devida
+-->
