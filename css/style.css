@@ -16,8 +16,11 @@
     line-height: 1.6;
     }
 
+    h1, h2, h3 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
     h1 {
-        font-family: 'Ruthie', sans-serif;
         font-size: 2.5rem;
     }
 
@@ -51,17 +54,18 @@
         border: 1px solid #000000;    
         padding: 12px;
     }
-    td{
-        background-color: #68A357;
-        font-weight: bold;
-    }
+
+    th {
+    background-color: #09814A;
+    font-weight: bold;
+}
 
     main{
         max-width: 900px;
-        max-width:0 auto;
-        margin:0 auto;
+        margin: 0 auto;
         padding: 16px;
     }
+
 
     nav a:link, nav a:visited{
         display: inline-block;
@@ -78,17 +82,34 @@
         list-style: none;
     }
 
-    input, select, area{
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 16px;
-    }
+   input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+}
 
-    input:focus{
-        border:2px #C97064
+input:focus, select:focus, textarea:focus {
+    border: 2px solid #09814A;
+}
 
-    }
+input[type="submit"] {
+    background-color: #09814A;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
 
-    
+.destaque {
+    background-color: #e8f5ee;
+    border-left: 4px solid #09814A;
+    padding: 16px;
+}
+
+
+/* 
+O paragrafo com a classe .destaque ficou vermelho.
+A regra p { color: red; } venceu pois ele apareceu depois do .destaque
+assim fazendo com que a cor vermelho fosse assumida
+*/
 
   
